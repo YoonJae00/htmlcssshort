@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>유튜브 쇼츠</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+<style>
+  body{
+            background-image: url(sample/image/phone_035.jpg);
+            background-size: cover;
+        }
+  *{
+    margin: 0;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d8d8d8;
+  }
+  .container {
+    display: flex;
+    background: rgb(162, 162, 162);
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .sidebar {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .icon {
+    /* top: 200px; */
+    display: flex;
+    margin: 3px 0;
+
+    /* text-align: center; */
+    /* background-color: aqua; */
+    font-family: Sunflower;
+    font-size: 10px;
+  }
+  .icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    /* padding-top: 300px; */
+    padding-bottom: 10px;
+  }
+  .video {
+    flex-grow: 1;
+    background: #3a3a3a;
+    margin-top: 3vh;
+    background-size: contain;
+    width: 300px;
+    height:300px;
+    object-fit: fill;
+  }
+  #title {
+      position: fixed;
+      padding: 10px;
+      font-family: Gaegu;
+      color: #000000;
+    }
+  #live-chat {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+  border: none;
+  border-radius: 16px;
+  background: royalblue;
+  color: white;
+  padding: 6px;
+  font-weight: bold;
+  box-shadow: 0px 5px 15px gray;
+  cursor: pointer;
+}
+#yjLogo{
+  font-family: Gaegu;
+  padding-bottom: 170px;
+}
+.t1{
+  margin-top: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="video">
+    <!-- 비디오 또는 이미지를 넣을 공간 -->
+    <video src="sample/video/ski.mp4" controls="controls" autoplay loop muted width="100%"></video>
+    <p id="title">윤재의 개고수 보드타기</p>
+  </div>
+  <div class="sidebar">
+    <div class="yoonjaeLogo" id="yjLogo">
+    <p>YoonJae's shorts</p>
+  </div>
+    <div class="icon">
+      <img src="sample/image/like_icon.png" alt="좋아요">
+      <p class="t1">좋아요</p>
+    </div>
+    <div class="icon">
+        <img src="sample/image/subscribe_icon.png" alt="구독">
+        <p class="t1">구독</p>
+    </div>
+    <div class="icon">
+      <img src="sample/image/comment_icon.png" alt="댓글">
+      <p class="t1">댓글</p>
+    </div>
+  </div>
+</div>
+<a href="ShortsHome.html" id="live-chat" class="button">메인으로 🏠</a>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브 쇼츠</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(sample/image/phone_035.jpg);
+            background-size: cover;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d8d8d8;
+        }
+
+        .container {
+            display: flex;
+            background: d8d8d8;
+            width: 300px;
+            height: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .image-container1 {
+            background: fixed;
+            width: 105px;
+            /* background-color: aqua; */
+        }
+
+        .image-container2 {
+            width: 105px;
+            /* background-color: rgb(29, 139, 31); */
+        }
+
+        .sidebar {
+            width: 90px;
+
+        }
+
+        #logo {
+            font-family: Gaegu;
+            margin: 10px;
+        }
+
+
+        #live-chat {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+
+            border: none;
+            border-radius: 16px;
+            background: royalblue;
+            color: white;
+            padding: 6px;
+            font-weight: bold;
+            box-shadow: 0px 5px 15px gray;
+            cursor: pointer;
+        }
+
+
+
+        .t1 {
+            margin-top: 10px;
+        }
+
+        .image-box img {
+            margin: 12px;
+            width: 100px;
+            height: 120px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 20%;
+        }
+
+        #go-button {
+            position: fixed;
+            bottom: 220px;
+            right: 170px;
+            padding: 5px 10px;
+            background: royalblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .info {
+
+            font-family: Gaegu;
+            /* position: absolute; */
+            margin: 40px;
+            top: 30px;
+            color: blue;
+        }
+
+        #gogoLogin {
+            position: fixed;
+            bottom: 10px;
+            right: 120px;
+
+            border: none;
+            border-radius: 16px;
+            background: royalblue;
+            color: white;
+            padding: 6px;
+            font-weight: bold;
+            box-shadow: 0px 5px 15px gray;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container1">
+            <a href="Short.html">
+                <div class="image-box alphamale">
+                    <img src="sample/image/alphamale.png" alt="이미지1" id="img">
+                </div>
+            </a>
+            <a href="ShortsSangmale.html">
+                <div class="image-box sangmale">
+                    <img src="sample/image/sangmale.png" alt="이미지2" id="img">
+                </div>
+            </a>
+            <a href="ShortsSki.html">
+                <div class="image-box ski">
+                    <img src="sample/image/ski.png" alt="이미지3" id="img">
+                </div>
+            </a>
+        </div>
+        <div class="image-container2">
+            <a href="ShortsFight.html">
+                <div class="image-box Fight">
+                    <img src="sample/image/fight.png" alt="이미지4" id="img">
+                </div>
+            </a>
+            <a href="ShortsBaseball.html">
+                <div class="image-box Baseball">
+                    <img src="sample/image/baseball.png" alt="이미지5" id="img">
+                </div>
+            </a>
+            <a href="ShortsCat.html">
+                <div class="image-box Cat">
+                    <img src="sample/image/cat.png" alt="이미지5" id="img">
+                </div>
+            </a>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar yjlogo" id="logo">
+                <a>YoonJae's Shorts</a>
+            </div>
+            <div class="info">
+                <a>사진을 &nbsp; 클릭하세요</a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="sidebar">
+        <div class="sidebar yoonjaeLogo" id="yjLogo">
+            <p>YoonJae's shorts</p>
+        </div>
+    </div> -->
+    <a href="ShortsHome.html" id="live-chat" class="button">메인으로 🏠</a>
+    <a href="Login.html" id="gogoLogin" class="button">로그인창으로🚗</a>
+</body>
+
+</html>
